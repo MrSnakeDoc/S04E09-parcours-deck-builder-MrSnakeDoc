@@ -1,0 +1,20 @@
+POST http://localhost:5000/api.streamsquid.io/tentacle/event?name="nckontwitch" HTTP/1.1
+content-type: application/json
+
+{
+      "broadcaster_language": "fr",
+      "broadcaster_login": "nckontwitch",
+      "display_name": "NCKonTwitch",
+      "game_id": "490377",
+      "game_name": "Sea of Thieves",
+      "id": "72186572",
+      "is_live": true,
+      "tag_ids": "[Array]",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/jtv_user_pictures/21946b8a-4109-49e7-8bae-82708c669f5d-channel_offline_image-1920x1080.png",
+      "title": "[FR] - 🌊 La vie de couple sur la mer... Avec Choupi - !score !mise",
+      "started_at": "2021-04-17T12:18:01Z"
+}
+
+###
+POST http://localhost:5000/api.streamsquid.io/tentacle/subscribe?name=nckontwitch HTTP/1.1
+content-type: application/json

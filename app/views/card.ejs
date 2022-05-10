@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<div class="cardsContainer">
+<div class="card">
+      <img src="/images/<%= card.visual_name %>" alt="<%= card.name %> illustration">
+      <p class="cardLevel">Level: <%= card.level %> </p>
+    <% if(card.element!==null) {%> 
+    <p class="cardElement"><%= card.element %> </p>
+    <%  }%>
+      <p class="cardName"><%= card.name %></p>
+    <a class="link--addCard" title="Ajouter au deck" href="/deck/add/<%= card.id %>">[ + ]</a>
+    <a class="link--removeCard" title="Enlever du deck" href="/deck/remove/<%= card.id %>">[ - ]</a>
+</div>
+</div>
+<%- include('partials/footer') %>
